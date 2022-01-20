@@ -1,11 +1,13 @@
 %============================== Setting teh Document=============================================
 
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usepackage[italian]{babel} 
 \usepackage[utf8]{inputenc} 
 \usepackage[T1]{fontenc}
 \usepackage{graphicx} 
 \usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb,lmodern}
 \usetheme{AnnArbor}
 
 
@@ -33,20 +35,103 @@
 
 
 \title{Il VHF marino e le procedure di radio telefonia} 
-\author{Francesco Rombaldoni} 
+\author{Francesco Rombaldoni\\
+Alias Rombo} 
 \date{}
 
 \institute{Università degli Studi di Urbino "Carlo Bo"} 
 \logo{\includegraphics[width=15mm]{Uni}}
 
-%\useoutertheme[right]{sidebar} 
 \setbeamercovered{dynamic}
 
 %===========================================Document starting===============================================
 \begin{document}
 	
+	% Cover Page
 	\begin{frame} 
 		\maketitle 		
+	\end{frame}
+	
+	% Index Page
+	\begin{frame}
+		%\index{generate}
+		\tableofcontents
+	\end{frame}
+
+	\section{Premessa}
+	
+	\begin{frame}{Premessa}
+		%\framesubtitle{Parte 1}
+		\textbf{L'obiettivo di questa relazione è di esporre il funzionamento, l'utilizzo e la manutenzione degli apparati radio ricetrasmittenti adottati per le radiocomunicazioni in ambito nautico.}\\
+		\bigskip
+		Per fare ciò la relazione sarà suddivisa in due parti:\\
+		\begin{itemize}
+			\item La prima parte verterà sulla teoria fisica di base degli apparati radio, al termine della quale si comprenderanno espressioni linguistiche del tipo: \emph{" La maggior parte delle trasmissioni nautiche sono effettuate utilizzando apparati VHF che modulano il segnale in frequenza"}.\\
+			\item La seconda parte verterà invece sull'utilizzo e la manutenzione degli impianti ricetrasmittenti di bordo, riservando attenzione alle "buone pratiche" e alle procedure per una comunicazione efficace, al termine della parte si sarà in grado di stabilire una comunicazione con un'altra unità marina o con la capitaneria di porto.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Premessa}
+		\framesubtitle{Argomenti della relazione}
+		\textbf{Argomenti della prima parte.}
+		\begin{itemize}
+			\item Proprietà elettromagnetiche della corrente alternata.
+			\item Periodo, frequenza e lunghezza d'onda.
+			\item Modulazione di ampiezza e la Modulazione di frequenza.
+			\item Le bande radio.
+			\item La radio e l'impianto ricetrasmittente.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Premessa}
+		\framesubtitle{Argomenti della relazione}
+		\textbf{Argomenti della seconda parte.}
+		\begin{itemize}
+			\item La banda nautica.
+			\item I canali VHF.
+			\item L'alfabeto internazionale. 
+			\item La classificazione dei messaggi. 
+			\item Trasmissione e ricezione.
+		\end{itemize}
+	\end{frame}
+
+	\section{Contesto}
+	\begin{frame}{Contesto}
+		\framesubtitle{Parte 1}
+		Per trasmettere informazioni, senza disporre di un collegamento fisico tra chi trasmette e chi riceve occorre far transitare su un mezzo non materiale.\\
+		\bigskip
+		\textbf{Nella trasmissione senza fili il mezzo materiale è costituito da \emph{onde radio}, ovvero da \emph{perturbazioni elettromagnetiche dello spazio}.}\\
+		\bigskip
+		Le onde radio possono veicolare le informazioni tra una stazione detta \emph{trasmittente} e una stazione detta \emph{ricevente}.\\
+	\end{frame}
+
+	\begin{frame}{Contesto}
+		\framesubtitle{Parte 2}
+			\textbf{Per trasmettere informazioni occorre:}\\
+		\begin{itemize}
+			\item Generare un'onda radio, detta \emph{onda portante} (quella che veicola le informazioni).
+			\item Sovrapporre all'onda portante le informazioni che si desidera veicolare, l'onda che si ottiene è definita \emph{un'onda modulata}.
+		\end{itemize} 
+		\bigskip
+		\textbf{Per ricevere informazioni occorre:}
+		\begin{itemize}
+			\item Captare l'onda radio trasmessa.
+			\item Estrarre dall'onda modulata le informazioni, ovvero \emph{demodulare l'onda}.
+		\end{itemize}
+	\end{frame}
+
+	\section{Proprietà elettromagnetiche della corrente alternata}
+	\begin{frame}{Introduzione}
+		\framesubtitle{Campo elettromagnetico}
+		Nel 1831 Faraday pubblica un resoconto di una serie di esperimenti nei quali, con modalità opportune, era riuscito a \emph{indurre in un circuito metallico una corrente elettrica} 
+		facendo muovere un magnete rispetto al circuito.\\
+		\bigskip
+		Nel 1890 Lorentz studia l'interazione tra una carica elettrica e un campo magnetico, comprendendo che il campo magnetico esercita una forza sulla carica elettrica secondo questa espressione:\\
+		\centering
+		\textbf{\textcolor{red!80}{$\vec{F}$ = q $\vec{v}$ X $\vec{B}$}}\\
+		\raggedright
+		questo testo invece non dovrebbe essere centrato
+		
 	\end{frame}
 	
 	
