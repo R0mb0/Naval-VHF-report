@@ -1,2 +1,9 @@
-
+*.aux
 *.pdf
+*.log
+*.nav
+*.out
+*.snm
+*.gz
+*.toc
+.DS_Store
