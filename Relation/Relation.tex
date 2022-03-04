@@ -9,6 +9,9 @@
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb,lmodern}
 \usetheme{AnnArbor}
+\usepackage{animate}
+
+\newcommand*{\vet}{\fontfamily{qzc}\selectfont}
 
 % in way to comment a block
 \long\def\/*#1*/{}
@@ -122,22 +125,8 @@ Alias Rombo}
 		\end{itemize}
 	\end{frame}
 
-	\section{Proprietà elettromagnetiche della corrente alternata}
+\section{Proprietà elettromagnetiche della corrente alternata}
 	
-	\/*
-	\begin{frame}{Introduzione}
-		\framesubtitle{Campo elettromagnetico}
-		Nel 1831 Faraday pubblica un resoconto di una serie di esperimenti nei quali, con modalità opportune, era riuscito a \emph{indurre in un circuito metallico una corrente elettrica} 
-		facendo muovere un magnete rispetto al circuito.\\
-		\bigskip
-		Nel 1890 Lorentz studia l'interazione tra una carica elettrica e un campo magnetico, comprendendo che il campo magnetico esercita una forza sulla carica elettrica secondo questa espressione:\\
-		\centering
-		\textbf{\textcolor{red!80}{$\vec{F}$ = q $\vec{v}$ X $\vec{B}$}}\\
-		\raggedright
-		questo testo invece non dovrebbe essere centrato
-		prova di scrittura
-	\end{frame}*/
-
 \begin{frame}{Introduzione}
 	\framesubtitle{Campo elettromagnetico}
 	Nel 1831 Faraday pubblica un resoconto di una serie di esperimenti nei quali, con modalità opportune, era riuscito a \emph{indurre in un circuito metallico una corrente elettrica} 
@@ -148,8 +137,138 @@ Alias Rombo}
 
 \begin{frame}{Forza di Lorentz}
 	\framesubtitle{Campo elettromagnetico}
-	La forza di Lorentz si ottiene a partire dalla forza prodotta da un conduttore di lunghezza l attraversato da una corrente d'intensità i e immerso in un campo magnetico uniforme 
+	La forza di Lorentz si ottiene a partire dalla formula per determinare la forza {\vet $\vec{F}$} prodotta da un conduttore di lunghezza {\vet $\vec{l}$} attraversato da una corrente d'intensità {\vet i} e immerso in un campo magnetico uniforme {\vet $\vec{B}$}.\\
+	\medskip
+	\centering{{\textcolor{red!80}{{\vet$\vec{F}$} = {\vet i $\vec{l}$} X {\vet$\vec{B}$}}}}\\
+	\medskip
+	\raggedright{Nella quale l'intensità della corrente {\vet i} è considerabile sulla base dell'interpretazione microscopica della corrente:}\\
+	\medskip
+	\centering{{\vet \textbf{i = e n S v}}}\\
+	\medskip
+	\raggedright{Dove: {\vet i}  rappresenta l'intensità della corrente, {\vet e} indica il valore assoluto della carica di un elettrone, {\vet n} indica il numero degli elettroni di conduzione contenuti nel conduttore \\ considerato, {\vet S} la sezione del conduttore considerato e {\vet v} la velocità degli elettroni di \\ conduzione presenti nel conduttore.}\\
 \end{frame}
 
+\begin{frame}{Forza di Lorentz}
+	\framesubtitle{Campo elettromagnetico}
+	Sostituendo l'intesnità della corrente si ottiene:\\  
+	\medskip
+	\centering{{\textcolor{red!80}{{\vet$\vec{F}$} = {\vet e n S v $\vec{l}$} X {\vet$\vec{B}$}}}}\\
+	\medskip
+	\raggedright{Tenendo conto del fatto che il vettore {\vet $\vec{l}$} ha la stessa direzione della velocità di deriva {\vet v} e verso opposta ad essa, è possibile considerare la precedente relazione in questo modo:}\\
+	\medskip
+	\centering{ {{\vet$\vec{F}$}} = -{\vet e n S l $\vec{v}$} X{\vet$\vec{B}$}}\\
+	\medskip
+	\raggedright{Considerando che il prodotto {\vet S l} corrisponde al volume del conduttore di tratto {\vet l} immerso nel campo magnetico {\vet $\vec{B}$}, ne consegue che il prodotto  {\vet n S l} permette di conoscere il numero {\vet N} di elettroni presente nel conduttore di tratto {\vet l}.\\
+	Si può quindi porre:\\}
+	\centering{{{\vet$\vec{F}$}} = -{\vet e N $\vec{v}$} X {\vet$\vec{B}$}}\\
+\end{frame}
+
+\begin{frame}{Forza di Lorentz}
+	\framesubtitle{Campo elettromagnetico}
+	La precedente espressione può essere estesa al caso più generare di una carica (positiva o negativa) di valore assoluto {\vet q} che si muove in un campo magnetico caratterizzato, nel punto dove si trova la carica in un certo istante, dal vettore {\vet $\vec{B}$}.\\
+	Ovvero:\\
+	\medskip
+	\centering{{\textcolor{red!80}{{\vet$\vec{F}$} = {\vet q $\vec{v}$} X {\vet$\vec{B}$}}}}\\
+	\medskip
+	\raggedright{Siccome non si può escludere che, unitamente al campo magnetico, sia presente anche un campo elettrico {\vet$\vec{E}$}, allora se {\vet$\vec{E}$} indica il vettore del campo elettrico nel punto {\vet P} allora la carica {\vet q} sarà sempre soggetta ad una forza:}\\
+	\medskip
+	\centering{{\textcolor{red!80}{{\vet$\vec{F}$} = {\vet q $\vec{E}$} + {\vet q $\vec{v}$} X {\vet$\vec{B}$}}}}\\
+\end{frame}
+
+\begin{frame}{Corrente indotta dalla forza di Lorentz}
+	\framesubtitle{Campo elettromagnetico}
+La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, con modalità opportune, si muove un circuito (oppure una sua parte) in un campo magnetico, nel circuito si genera una corrente elettrica che non dipende dall'evventuale presenza di un generatore (ad esempio di tipo elettrochimico), per questo motivo la corrente elettrica prodotta è designata con il termine di \textbf{corrente indotta}.\\
+\end{frame}
+
+\begin{frame}{Corrente indotta e campo elettromotore}
+	\framesubtitle{Campo elettromagnetico}
+	Considerando un \emph{circuito di forma quadrata}, realizzato con un buon conduttore, nel quale sia stato inserito un \emph{amperometro con lo zero centrale}, che sia in movimento (\emph{con velocità costante}) rispetto ad un \emph{campo magnetico uniforme},  in maniera tale che durante il movimento, il circuito entra ed esca dal campo magnetico.\\
+	Supponendo che, il circuito si muovi da sinistra verso destra e che il campo magnetico sia posizionato a metà del percorso che il circuito deve compiere, si hanno cinque configurazioni del circuito rispetto al campo magnetico.\\
+	\end{frame}
+
+\begin{frame}{Corrente indotta e campo elettromotore}
+	\framesubtitle{Campo elettromagnetico}
+	\begin{enumerate}
+	\item Il circuito si trova al di fuori del campo magnetico, di conseguenza l'amperometro non indica alcun passaggio di corrente.
+	\item Il circuito si trova parzialmente nel campo magnetico, di conseguenza l'amperometro indica la presenza di una corrente d'elettroni che si muove in senso orario. Questa cosa è possibile poiché sugli elettroni di conduzione agisce la forza di Lorentz, di conseguenza si produce una forza elettromotrice data dalla circuitazione del campo elettromotore.
+	\item Il circuito si trova completamente immerso nel campo magnetico, di conseguenza nel tratto precedentemente non immerso nel campo magnetico, si  svilupperà un campo elettromotore. Tenendo presente che il fenomeno della corrente indotta è osservabile solo nei circuiti chiusi, è possibile dedurre che il campo elettromotore generato sia\\ opposto a quello della seconda configurazione, facendo in modo che la\\ circuitazione totale valga zero.
+\end{enumerate}
+	\end{frame}
+
+\begin{frame}{Corrente indotta e campo elettromotore}
+	\framesubtitle{Campo elettromagnetico}
+	\begin{enumerate}
+		\setcounter{enumi}{3}
+		\item Il circuito si trova parzialmente nel campo magnetico, di conseguenza l'amperometro indica la presenza di una corrente d'elettroni che si muove in senso antiorario. 
+		\item Il circuito si trova completamente al di fuori del campo magnetico, di conseguenza in esso non sarà più presente alcun campo elettromotore associato alla forza di Lorentz e quindi non sarà percorso da alcuna corrente.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Legge di Faraday}
+	\framesubtitle{Campo elettromagnetico}
+	L'esperimento precedente oltre permettere di apprezzare l'esistenza della corrente indotta, permette di dimostrare che la genesi del campo elettromotore (il quale poi genera un flusso d'elettroni) è dipendente da una variazione del campo magnetico, infatti quando il circuito dell'esperimento si trovava completamente immerso nel campo magnetico, in esso la somma dei campi elettromotori individuati era nulla.\\
+	Il fenomeno appena descritto è interpretabile utilizzando il concetto di flusso del campo magnetico:\\
+	\medskip
+		\centering{\emph{Quando ad un circuito si concatena una variazione $ \Delta \Phi (\vec{B})$ del flusso del campo magnetico nel tempo $\Delta${\vet t}, nel circuito si produce una corrente indotta determinata dalla presenza di una \textbf{forza elettromotrice} espressa dalla relazione seguente}}\\
+	\medskip
+	\centering{{\textcolor{red!80}{{\vet fem} = $\frac{\Delta \Phi (\vec{B})}{\Delta t}$}}}\\
+	\end{frame}
+
+\begin{frame}{Legge di Faraday-Lenz}
+	\framesubtitle{Campo elettromagnetico}
+	La descrizione della forza elettromotrice indotta espressa dalla legge di Faraday è incompleta, perché in base ad essa non è possibile stabilire il verso di circolazione della corrente indotta.\\
+	Faraday aveva dato delle indicazioni chiare sul modo di determinare il verso di circolazione, tuttavia Lenz nel 1834 espose delle osservazioni in grado di semplificare il procedimento proposto da Faraday.\\
+	Le osservazioni che Lenz espose sono sintetizzabili in questo modo:\\
+	\medskip
+	\centering{\emph{La forza elettromotrice indotta in un circuito genera una corrente (detta corrente indotta) il cui effetto deve essere tale da opporsi alla causa che la produce.}}\\
+	\medskip
+	\raggedright{Per tenere conto della legge di Lenz, la legge di Faraday viene riscritta in questo modo:}\\
+	\medskip
+	\centering{{\textcolor{red!80}{{\vet fem} = -$\frac{\Delta \Phi (\vec{B})}{\Delta t}$}}}\\
+	\end{frame}
+
+\begin{frame}{Corrente autoindotta}
+	\framesubtitle{Campo elettromagnetico}
+	Fino a questo momento la legge di Faraday-Lenz è stata usata per interpretare l'effetto che un campo magnetico variabile produce su un circuito chiuso.\\
+	Ma un circuito in cui fluisce corrente è un elemento che, a sua volta,  genera un campo magnetico al quale (di conseguenza) si concatena un flusso del campo magnetico.\\
+	Se quindi si fa variare l'intensità della corrente che fluisce nel circuito considerato, varierà anche il flusso del campo magnetico che si concatena ad esso. Questa condizione in base alla legge di Faraday-Lenz, determinerà nel circuito stesso la genesi di una corrente indotta.\\
+	\medskip
+	Trattandosi di corrente indotta dalla variazione dell'intensità della corrente che fluisce nel circuito stesso, essa viene usualmente denominata \textbf{Corrente autoindotta}.\\
+	\end{frame}
+
+\begin{frame}{Corrente autoindotta}
+	\framesubtitle{Campo elettromagnetico}
+	L'intensità della \textbf{corrente autoindotta} è determinata dal valore della variazione nel tempo del flusso che si concatena al circuito. Ricordando che il valore del flusso autoconcatenato dipende a sua volta dalle caratteristiche geometriche del circuito e dalle caratteristiche del mezzo con cui il circuito è realizzato.\\
+	\medskip
+	\centering{\emph{In generale, ad ogni circuito è possibile associare una grandezza, denominata \textbf{coefficiente di autoindizione} (detto anche induttanza) che si indica con il simbolo{\vet L}, che connette il valore dell'intensità di corrente che fluisce nel circuito con il valore $\Phi(\vec{B})$ del flusso del campo magnetico autoconcatenato, secondo la relazione:}}\\
+	\medskip
+	\centering{{\textcolor{red!80}{$\Phi(\vec{B})$ = {\vet L i}}}}
+\end{frame}
+
+\begin{frame}{Radiazione elettromagnetica}
+	\framesubtitle{Campo elettromagnetico}
+	In generale, nella realtà, un flusso variabile di $\vec{B}$ (o di $\vec{E}$) non genera un campo $\vec{E}$ (o un campo $\vec{B}$) anch'esso variabile; tuttavia in opportune condizioni ciò può accadere.\\
+	\medskip
+	Se $\vec{B}$ variasse sinusoidalmente secondo l'ecquazione:\\ 
+	\smallskip
+	{\textcolor{black!50}{${\vet B} = C_{1} \sin (\omega {\vet t})$}}\\
+	\smallskip
+	Il campo elettromotore associato alla variazione del flusso di $\vec{B}$ rispetto al tempo sarebbe del tipo:\\
+	\smallskip
+	{\textcolor{black!50}{${\vet E} = C_{2} \cos (\omega {\vet t})$}}\\
+	\smallskip
+	D'altra parte, ad un campo elettrico di questo tipo, è associato un flusso la cui variazione rispetto al tempo genererà un campo $\vec{B}$ del tipo:\\
+	\smallskip
+	{\textcolor{black!50}{${\vet B} = C_{3} \sin (\omega {\vet t})$}}
+ 	\end{frame}
+ \begin{frame}{Radiazione elettromagnetica}
+ 	
+ 	\framesubtitle{Campo elettromagnetico}
+ 	Per cui si deduce che:\\
+ 	\medskip
+ 	\centering{\emph{Un campo magnetico variabile in modo opportuno concatena a sè un campo elettromotore, variabile in modo tale da concatenare a se un campo magnetico variabile... e così via.\\ In questo caso, i campi elettrico e magnetico concatenati costituiscono un ente fisico, solitamente indicato con il termine di \textbf{radiazione elettromagnetica}}}\\
+ 	\medskip
+ 	\animategraphics[loop,width=4cm]{10}{GifImage/Wavey-}{0}{30}
+ \end{frame}
 
 \end{document}
