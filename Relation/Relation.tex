@@ -11,6 +11,7 @@
 \usetheme{AnnArbor}
 \usepackage{animate}
 
+%change the font localy
 \newcommand*{\vet}{\fontfamily{qzc}\selectfont}
 
 % in way to comment a block
@@ -20,31 +21,43 @@
 \makeatletter
 
 \setbeamercolor*{author in head/foot}{parent=palette tertiary}
-\setbeamercolor*{title in head/foot}{parent=palette secondary}
+\setbeamercolor*{title in head/foot}{parent=palette primary}
 \setbeamercolor*{date in head/foot}{parent=palette primary}
 
 \setbeamercolor*{section in head/foot}{parent=palette tertiary}
 \setbeamercolor*{subsection in head/foot}{parent=palette primary}
 % colors for the external link field
-\setbeamercolor*{external link}{parent=palette secondary}
+\setbeamercolor*{LinkToIndex}{parent=palette tertiary}
 
-\defbeamertemplate*{FootLine}{}
+\defbeamertemplate*{footline}{}
 {
 	\leavevmode%
 	\hbox{%
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-			\usebeamerfont{author in head/foot}\insertsection
+			\usebeamerfont{author in head/foot}%\insertsection
 		\end{beamercolorbox}%
-		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}\insertsubsection
+	
+		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
+			%\insertsubsection
 		\end{beamercolorbox}%
+	
+	% this is a new field with an external link
+	\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{LinkToIndex}%
+		\usebeamerfont{author in head/foot}\hyperlink{index}{indice}\hspace*{2ex}
+	\end{beamercolorbox}%
+
+%\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+%\insertframenumber{} / \inserttotalframenumber 
+
+		
 		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
 			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
 			\insertframenumber{} / \inserttotalframenumber 
-		\end{beamercolorbox}%
-		% this is a new field with an external link
-		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,right]{external link}%
-			\usebeamerfont{author in head/foot}\hyperlink{index}{indice}    \hspace*{2ex}
-	\end{beamercolorbox}}%
+		\end{beamercolorbox}}%
+			
+	%\usebeamerfont{author in head/foot}\hyperlink{index}{indice}\hspace*{2ex}
+		
+
 	\vskip0pt%
 }
 \setbeamersize{text margin left=1em,text margin right=1em}
@@ -446,13 +459,21 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 	\centering{{\textcolor{blue!80}{\huge{\textbf{Modulazione d'ampiezza e Modulazione di frequenza}}}}}\\
 \end{frame}
 
-\begin{frame}{Modulazione d'ampiezza}
+\begin{frame}{Modulazione di ampiezza}
 	\framesubtitle{Introduzione}
 	In telecomunicazioni, la \textbf{modulazione di ampiezza} (sigla \textbf{AM}), è una tecnica di trasmissione usata per trasmettere informazioni. La quale consiste nel modulare l'ampiezza del segnale radio che s'intende utilizzare per la trasmissione (detto \textbf{segnale portante}), in maniera proporzionale all'ampiezza del segnale che s'intende trasmettere (detto \textbf{segnale modulante}) e che contiene l'informazione.\\
 	\medskip
 	La modulazione di ampiezza è molto semplice da realizzare, per questo motivo è stata utilizzata agli albori delle trasmissioni radio.\\
 	\medskip
 	I principali inconvenienti legati all'utilizzo di questa tecnica sono: l'estrema sensibilità ai disturbi e alle condizioni di propagazione, in quanto qualsiasi disturbo, nonché le variazioni aleatorie dell'attenuazione offerte dal mezzo trasmissivo durante la propagazione.
+\end{frame}
+
+\begin{frame}{Modulazione di ampiezza}
+	\framesubtitle{Descrizione}
+	Supponiamo di utilizzare come \textbf{onda portante} (di frequenza maggiore rispetto all'onda modulante), un'onda periodica in questa forma:\\
+	\smallskip
+	\centering{$\vartheta_{p} (t) = V_{p} \cos \omega_{p} t$ \quad (prima figura)}\\
+	 
 \end{frame}
 
 
