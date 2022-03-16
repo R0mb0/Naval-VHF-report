@@ -10,6 +10,7 @@
 \usepackage{amsmath,amssymb,lmodern}
 \usetheme{AnnArbor}
 \usepackage{animate}
+\usepackage{sidecap}
 
 %change the font localy
 \newcommand*{\vet}{\fontfamily{qzc}\selectfont}
@@ -304,7 +305,12 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
  	\medskip
  	\centering{\emph{Un campo magnetico variabile in modo opportuno concatena a sè un campo elettromotore, variabile in modo tale da concatenare a se un campo magnetico variabile... e così via.\\ In questo caso, i campi elettrico e magnetico concatenati costituiscono un ente fisico, solitamente indicato con il termine di \textbf{radiazione elettromagnetica}}}\\
  	\medskip
- 	\animategraphics[loop,width=4cm]{10}{GifImage/Wavey/Wavey-}{0}{30}
+ 	%\animategraphics[loop,width=4cm]{10}{GifImage/Wavey/Wavey-}{0}{30}
+ 	%\caption{{\textcolor{gray!80}{[Immagine animata]}}}
+ 	\begin{SCfigure}
+ 		\animategraphics[loop,width=4cm]{10}{GifImage/Wavey/Wavey-}{0}{30}
+ 		\caption{{\textcolor{gray!80}{[Immagine animata]}}}
+ 		\end{SCfigure}
  \end{frame}
 
 \begin{frame}{Propagazione della radiazione elettromagnetica}
@@ -461,7 +467,7 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 
 \begin{frame}{Modulazione di ampiezza}
 	\framesubtitle{Introduzione}
-	In telecomunicazioni, la \textbf{modulazione di ampiezza} (sigla \textbf{AM}), è una tecnica di trasmissione usata per trasmettere informazioni. La quale consiste nel modulare l'ampiezza del segnale radio che s'intende utilizzare per la trasmissione (detto \textbf{segnale portante}), in maniera proporzionale all'ampiezza del segnale che s'intende trasmettere (detto \textbf{segnale modulante}) e che contiene l'informazione.\\
+	In telecomunicazioni, la \textbf{modulazione di ampiezza} (sigla \textbf{AM}), è una tecnica di trasmissione usata per trasmettere informazioni. La quale consiste nel modulare l'ampiezza del segnale radio che s'intende utilizzare per la trasmissione (detto \textbf{segnale portante}), in maniera proporzionale all'ampiezza del segnale che s'intende trasmettere (detto \textbf{segnale modulante}) che contiene l'informazione.\\
 	\medskip
 	La modulazione di ampiezza è molto semplice da realizzare, per questo motivo è stata utilizzata agli albori delle trasmissioni radio.\\
 	\medskip
@@ -470,10 +476,82 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 
 \begin{frame}{Modulazione di ampiezza}
 	\framesubtitle{Descrizione}
-	Supponiamo di utilizzare come \textbf{onda portante} (di frequenza maggiore rispetto all'onda modulante), un'onda periodica in questa forma:\\
-	\smallskip
-	\centering{$\vartheta_{p} (t) = V_{p} \cos \omega_{p} t$ \quad (prima figura)}\\
-	 
+	
+	\begin{columns}
+		% Column 1
+		\begin{column}{0.6\textwidth}
+			Supponendo di utilizzare come \textbf{onda portante} (di frequenza maggiore rispetto all'onda modulante), un'onda periodica in questa forma:\\
+			\smallskip
+			\centering{{\textcolor{red!80}{$v_{p}(t) = V_{p}\cos\omega_{p}t$}}\qquad (Prima figura)}\\
+			\smallskip
+			\raggedright{E come \textbf{onda modulante}, un'onda periodica in questa forma:}\\
+			\smallskip
+			\centering{{\textcolor{red!80}{$v_{m}(t) = V_{m}\cos\omega_{m}t$}} \qquad(Seconda figura)}\\
+			\smallskip
+			\raggedright{Ricordando che pulsazione, frequenza e periodo sono legate fra loro:}\\
+			\smallskip
+			\centering{{\vet f} = $\frac{1}{T}$\quad$\omega = 2 \pi$ {\vet f} = $\frac{2\pi}{T}$}\\
+			\smallskip
+			\raggedright{Pertanto il segnale modulato dovrà risultare:}\\
+			\smallskip
+			\centering{{\textcolor{red!80}{$v_{am}(t) = (V_{p} + V_{m} \cos\omega_{m}t)\cos\omega_{p}t$}} \qquad (Terza figura)}\\
+		\end{column}
+		% Column 2    
+		\begin{column}{0.4\textwidth}
+			\begin{figure}
+			%	\centering
+			\raggedright
+			%\hfill
+			\includegraphics[width=0.8\textwidth]{Imgs/Modulante}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\end{frame}
+
+\begin{frame}{Modulazione di frequenza}
+	\framesubtitle{Introduzione}
+	La \textbf{modulazione di frequenza} (sigla \textbf{FM}), nelle telecomunicazioni è una delle tecniche di trasmissione utilizzate per trasmettere informazioni.\\
+	Consiste nel modulare la frequenza del segnale radio che s'intende utilizzare per la trasmissione (detto portante) in maniera proporzionale all'ampiezza del segnale che s'intende trasmettere.\\
+	\medskip
+	Rispetto alla \textbf{modulazione di ampiezza}, possiede il vantaggio di essere molto meno sensibile ai disturbi e permette una trasmissione di maggiore qualità. Possiede inoltre un'efficenza energetica molto superiore, in quanto la potenza del segnale modulato FM è esclusivamente quella della portante. (Il segnale della informazione, non richiede potenza aggiuntiva per poter essere trasmesso).\\
+	\medskip
+	Il difetto principale è la necessità di circuiti molto più complessi, sia per la trasmissione\\ che per ricezione  del segnale, nonché, una maggiore richiesta di banda in trasmissione. \\
+	\end{frame}
+
+\begin{frame}{Modulazione di frequenza}
+	\framesubtitle{Descrizione}
+	
+		\begin{columns}
+		% Column 1
+		\begin{column}{0.6\textwidth}
+			Supponendo di utilizzare come \textbf{onda portante} (di frequenza maggiore rispetto all'onda modulante), un'onda periodica in questa forma:\\
+			\smallskip
+			\centering{{\textcolor{red!80}{$v_{p}(t) = V_{p}\cos\omega_{p}t$}}\qquad (Prima figura)}\\
+			\smallskip
+			\raggedright{E come \textbf{onda modulante}, un'onda periodica in questa forma:}\\
+			\smallskip
+			\centering{{\textcolor{red!80}{$v_{m}(t) = V_{m}\cos\omega_{m}t$}} \qquad(Seconda figura)}\\
+			\smallskip
+			\raggedright{Ricordando che pulsazione, frequenza e periodo sono legate fra loro:}\\
+			\smallskip
+			\centering{{\vet f} = $\frac{1}{T}$\quad$\omega = 2 \pi$ {\vet f} = $\frac{2\pi}{T}$}\\
+			\smallskip
+			\raggedright{Pertanto il segnale modulato dovrà risultare:}\\
+			\smallskip
+			\centering{{\textcolor{red!80}{$v_{am}(t) = (V_{p} + V_{m} \cos\omega_{m}t)\cos\omega_{p}t$}} \qquad (Terza figura)}\\
+		\end{column}
+		% Column 2    
+		\begin{column}{0.4\textwidth}
+			\begin{figure}
+				%	\centering
+				\raggedright
+				%\hfill
+				\animategraphics[loop,width=4cm]{10}{GifImage/FM/FM-}{0}{31}
+				\caption {\textcolor{gray!80}{[Immagine animata]}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	
 \end{frame}
 
 
