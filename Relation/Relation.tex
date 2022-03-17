@@ -10,7 +10,9 @@
 \usepackage{amsmath,amssymb,lmodern}
 \usetheme{AnnArbor}
 \usepackage{animate}
-\usepackage{sidecap}
+%\usepackage{sidecap}
+%\usepackage{floatrow}
+
 
 %change the font localy
 \newcommand*{\vet}{\fontfamily{qzc}\selectfont}
@@ -307,10 +309,19 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
  	\medskip
  	%\animategraphics[loop,width=4cm]{10}{GifImage/Wavey/Wavey-}{0}{30}
  	%\caption{{\textcolor{gray!80}{[Immagine animata]}}}
- 	\begin{SCfigure}
- 		\animategraphics[loop,width=4cm]{10}{GifImage/Wavey/Wavey-}{0}{30}
- 		\caption{{\textcolor{gray!80}{[Immagine animata]}}}
- 		\end{SCfigure}
+ 	%\raggedright
+		\begin{figure}
+			\begin{columns}
+				\hfill
+				\column{.1\linewidth}
+				\animategraphics[loop,width=4.5cm]{10}{GifImage/Wavey/Wavey-}{0}{30}
+				\column{.3\linewidth}
+				%\caption{{\textcolor{gray!80}{[Immagine animata]}}}
+			\qquad \tiny{\textcolor{gray!80}{[Immagine animata]}}
+			\end{columns}
+		\end{figure}
+		
+ 	
  \end{frame}
 
 \begin{frame}{Propagazione della radiazione elettromagnetica}
@@ -546,8 +557,9 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 				%	\centering
 				\raggedright
 				%\hfill
-				\animategraphics[loop,width=4cm]{10}{GifImage/FM/FM-}{0}{31}
-				\caption {\textcolor{gray!80}{[Immagine animata]}}
+				\animategraphics[loop,width=5cm]{10}{GifImage/FM/FM-}{0}{31}\\
+				%\caption {\textcolor{gray!80}{[Immagine animata]}}
+				\qquad \qquad \tiny {\textcolor{gray!80}{[Immagine animata]}}
 			\end{figure}
 		\end{column}
 	\end{columns}
