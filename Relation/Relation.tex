@@ -10,8 +10,7 @@
 \usepackage{amsmath,amssymb,lmodern}
 \usetheme{AnnArbor}
 \usepackage{animate}
-%\usepackage{sidecap}
-%\usepackage{floatrow}
+
 
 
 %change the font localy
@@ -314,7 +313,7 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 			\begin{columns}
 				\hfill
 				\column{.1\linewidth}
-				\animategraphics[loop,width=4.5cm]{10}{GifImage/Wavey/Wavey-}{0}{30}
+				\animategraphics[loop,width=3\textwidth]{10}{GifImage/Wavey/Wavey-}{0}{30}
 				\column{.3\linewidth}
 				%\caption{{\textcolor{gray!80}{[Immagine animata]}}}
 			\qquad \tiny{\textcolor{gray!80}{[Immagine animata]}}
@@ -431,7 +430,8 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 	\emph{Un'onda è una struttura ripetitiva tanto nello spazio che nel tempo.}\\
 	\smallskip
 	La \textbf{lunghezza d'onda} di un'onda periodica è la distanza tra due massimi o fra due minimi, e viene comunemente indicata con $\lambda$.\\
-	\centering{\includegraphics[scale=0.2]{Imgs/Onda}}	
+	\centering
+	\includegraphics[width=0.3\textwidth]{Imgs/Onda}
 \end{frame}
 
 \begin{frame}{Lunghezza e ampiezza d'onda}
@@ -447,7 +447,7 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 	\centering{$\frac{3 \cdot 10^8 m\mathbin{/}s}{100 \cdot 10^6 Mh} = 3m$}\\
 	\medskip
 	\raggedright{In sintesi:}\\
-	\emph{La \textbf{lunghezza d'onda} che viene misurata in metri, rappresenta la distanza tra i massimi ed i minimi dell'onda. Mentre il valore della sua \textbf{ampiezza} consiste nella distanza che intercorre tra il suo massimo ed il suo valore nullo.}
+	\emph{La \textbf{lunghezza d'onda} che viene misurata in metri, rappresenta la distanza tra i massimi \\ed i minimi dell'onda. Mentre il valore della sua \textbf{ampiezza} consiste nella distanza che intercorre tra il suo massimo ed il suo valore nullo.}
 \end{frame}
 
 \begin{frame}{Relazione tra lunghezza d'onda e frequenza}
@@ -460,11 +460,11 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 		\hline
 		\textbf{Banda}& \textbf{Frequenza} & \textbf{Lambda} \\
 		\hline
-		O M (radioamatori)& 14Mhz & 21m \\
+		OM (radioamatori)& 14Mhz & 21m \\
 		\hline
-		C B (banda cittadina)& 27Mhz & 11m\\
+		CB (banda cittadina)& 27Mhz & 11m\\
 		\hline
-		A G (aviazione)& 118Mhz & 2,54m \\
+		AG (aviazione)& 118Mhz & 2,54m \\
 		\hline
 		Nautica VHF (marittima)& 156Mhz & 1.92m \\
 		\hline
@@ -482,8 +482,9 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 	\medskip
 	La modulazione di ampiezza è molto semplice da realizzare, per questo motivo è stata utilizzata agli albori delle trasmissioni radio.\\
 	\medskip
-	I principali inconvenienti legati all'utilizzo di questa tecnica sono: l'estrema sensibilità ai disturbi e alle condizioni di propagazione, in quanto qualsiasi disturbo, nonché le variazioni aleatorie dell'attenuazione offerte dal mezzo trasmissivo durante la propagazione.
+	I principali inconvenienti legati all'utilizzo di questa tecnica sono: l'estrema sensibilità ai disturbi e alle condizioni di propagazione, in quanto qualsiasi disturbo, nonché le \\ variazioni aleatorie dell'attenuazione offerte dal mezzo trasmissivo durante la \\propagazione.
 \end{frame}
+
 
 \begin{frame}{Modulazione di ampiezza}
 	\framesubtitle{Descrizione}
@@ -493,11 +494,11 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 		\begin{column}{0.6\textwidth}
 			Supponendo di utilizzare come \textbf{onda portante} (di frequenza maggiore rispetto all'onda modulante), un'onda periodica in questa forma:\\
 			\smallskip
-			\centering{{\textcolor{red!80}{$v_{p}(t) = V_{p}\cos\omega_{p}t$}}\qquad (Prima figura)}\\
+			\centering{{\textcolor{red!80}{$v_{p}(t) = V_{p}\cos(\omega_{p}t)$}}\qquad (Prima figura)}\\
 			\smallskip
 			\raggedright{E come \textbf{onda modulante}, un'onda periodica in questa forma:}\\
 			\smallskip
-			\centering{{\textcolor{red!80}{$v_{m}(t) = V_{m}\cos\omega_{m}t$}} \qquad(Seconda figura)}\\
+			\centering{{\textcolor{red!80}{$v_{m}(t) = V_{m}\cos(\omega_{m}t)$}} \qquad(Seconda figura)}\\
 			\smallskip
 			\raggedright{Ricordando che pulsazione, frequenza e periodo sono legate fra loro:}\\
 			\smallskip
@@ -505,7 +506,7 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 			\smallskip
 			\raggedright{Pertanto il segnale modulato dovrà risultare:}\\
 			\smallskip
-			\centering{{\textcolor{red!80}{$v_{am}(t) = (V_{p} + V_{m} \cos\omega_{m}t)\cos\omega_{p}t$}} \qquad (Terza figura)}\\
+			\centering{{\textcolor{red!80}{$v_{am}(t) = (V_{p} + V_{m} \cos(\omega_{m}t))\cos(\omega_{p}t)$}} \quad (Terza figura)}\\
 		\end{column}
 		% Column 2    
 		\begin{column}{0.4\textwidth}
@@ -524,32 +525,64 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 	La \textbf{modulazione di frequenza} (sigla \textbf{FM}), nelle telecomunicazioni è una delle tecniche di trasmissione utilizzate per trasmettere informazioni.\\
 	Consiste nel modulare la frequenza del segnale radio che s'intende utilizzare per la trasmissione (detto portante) in maniera proporzionale all'ampiezza del segnale che s'intende trasmettere.\\
 	\medskip
-	Rispetto alla \textbf{modulazione di ampiezza}, possiede il vantaggio di essere molto meno sensibile ai disturbi e permette una trasmissione di maggiore qualità. Possiede inoltre un'efficenza energetica molto superiore, in quanto la potenza del segnale modulato FM è esclusivamente quella della portante. (Il segnale della informazione, non richiede potenza aggiuntiva per poter essere trasmesso).\\
+	Rispetto alla \textbf{modulazione di ampiezza}, possiede il vantaggio di essere molto meno sensibile ai disturbi e permette una trasmissione di maggiore qualità. Possiede inoltre una efficienza energetica molto superiore, in quanto la potenza del segnale modulato FM è esclusivamente quella della portante. (Il segnale della informazione, non richiede potenza aggiuntiva per poter essere trasmesso).\\
 	\medskip
 	Il difetto principale è la necessità di circuiti molto più complessi, sia per la trasmissione\\ che per ricezione  del segnale, nonché, una maggiore richiesta di banda in trasmissione. \\
 	\end{frame}
 
 \begin{frame}{Modulazione di frequenza}
-	\framesubtitle{Descrizione}
+	\framesubtitle{Descrizione parte 1}
+	Supponendo di utilizzare come \textbf{onda portante} un'onda periodica in questa forma:\\
+	\smallskip
+	\centering{{\textcolor{red!80}{$v_{p}(t) = V_{p}\cos(\omega_{p}t)$}}}\\
+	\smallskip
+	\raggedright{E come \textbf{onda modulante}, un'onda periodica in questa forma:}\\
+	\smallskip
+	\centering{{\textcolor{red!80}{$v_{m}(t) = V_{m}\cos(\omega_{m}t)$}}}\\
+	\smallskip
+	\raggedright{Dove: $\omega_{p}>>\omega_{m}$}\\
+	\smallskip
+	\raggedright{Mentre nel segnale della portante la pulsazione $\omega_{p}$ possiede valore costante, la pulsazione del segnale modulato deve essere proporzionale, secondo una costante $K_f$ caratteristica del modulatore, all'ampiezza del segnale modulante}\\
+	\smallskip
+	Per cui la pulsazione istantanea del segnale modulato in \textbf{FM} deve avere la forma:\\
+	\quad \textcolor{red!80}{$\omega_{FM}(t) $} $= \omega_{p} + K_{f} V_{m} \cos(\omega_{m}t)$
+	$= 2\pi(f_{p} + \frac{K_{f} V_{m}}{2\pi} \cos(\omega_{m}t))$
+	\textcolor{red!80}{$= 2\pi(f_{p} + \Delta f \cos(\omega_{m}t))$}\\
+	\smallskip
+	\raggedright{Dove: $\Delta f = \frac{K_{f} V_{m}}{2\pi}$ indica lo spostamento massimo di frequenza rispetto al valore $f_{p}$ \\della portante}
+\end{frame}
+
+
+\begin{frame}{Modulazione di frequenza}
+	\framesubtitle{Descrizione parte 2}
 	
 		\begin{columns}
 		% Column 1
 		\begin{column}{0.6\textwidth}
-			Supponendo di utilizzare come \textbf{onda portante} (di frequenza maggiore rispetto all'onda modulante), un'onda periodica in questa forma:\\
+			La pulsazione istantanea e l'angolo istantaneo sono legati dalla relazione:\\
+			%\smallskip
+			\centering{$\omega(t) = \frac{d\varphi(t)}{dt}$}\\
+			%\smallskip
+			\raggedright{Per cui:}\\
+			%\smallskip
+			\centering{$d\varphi(t) = \omega(t)dt$}\\
 			\smallskip
-			\centering{{\textcolor{red!80}{$v_{p}(t) = V_{p}\cos\omega_{p}t$}}\qquad (Prima figura)}\\
+			\raggedright{Dalla quale integrando si ottiene:}\\
 			\smallskip
-			\raggedright{E come \textbf{onda modulante}, un'onda periodica in questa forma:}\\
+			\centering
+			\textcolor{red!80}{$\varphi(t) = $} $\int(\omega_{p} K_{f} V_{m} \cos(\omega_{m}t))dt =$\\
 			\smallskip
-			\centering{{\textcolor{red!80}{$v_{m}(t) = V_{m}\cos\omega_{m}t$}} \qquad(Seconda figura)}\\
+			$=$ \textcolor{red!80}{$\omega_{p}t + \frac{K_{f} V_{m}}{\omega_{m}} \sin(\omega_{m}t)$}\\
 			\smallskip
-			\raggedright{Ricordando che pulsazione, frequenza e periodo sono legate fra loro:}\\
+			\raggedright{Ora è possibile trovare il valore del segnale modulato:}\\
 			\smallskip
-			\centering{{\vet f} = $\frac{1}{T}$\quad$\omega = 2 \pi$ {\vet f} = $\frac{2\pi}{T}$}\\
+			\centering
+			\textcolor{red!80}{$v_{FM}(t) = $} $V_{p} \cos(\omega_{p}t+\frac{K_{f} V_{m}}{\omega_{m}}\sin(\omega_{m}t)) =$\\
 			\smallskip
-			\raggedright{Pertanto il segnale modulato dovrà risultare:}\\
+			$=$ \textcolor{red!80}{$V_{p}\cos(\omega_{p}t + m\sin(\omega_{m}t))$}\\
 			\smallskip
-			\centering{{\textcolor{red!80}{$v_{am}(t) = (V_{p} + V_{m} \cos\omega_{m}t)\cos\omega_{p}t$}} \qquad (Terza figura)}\\
+			\raggedright{Dove: $m = \frac{K_{f} V_{m}}{\omega_{m}} = \frac{K_{f} V_{m}}{2\pi f_{m}} = \frac{\varDelta f}{f_{m}}$ indica l'indice di modulazione in frequenza}
+			
 		\end{column}
 		% Column 2    
 		\begin{column}{0.4\textwidth}
@@ -557,8 +590,7 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 				%	\centering
 				\raggedright
 				%\hfill
-				\animategraphics[loop,width=5cm]{10}{GifImage/FM/FM-}{0}{31}\\
-				%\caption {\textcolor{gray!80}{[Immagine animata]}}
+				\animategraphics[loop,width=0.8\textwidth]{10}{GifImage/FM/FM-}{0}{31}\\
 				\qquad \qquad \tiny {\textcolor{gray!80}{[Immagine animata]}}
 			\end{figure}
 		\end{column}
@@ -566,5 +598,434 @@ La relazione espressa dalla forza di Lorentz consente di prevedere che, quando, 
 	
 \end{frame}
 
+\section{Le bande radio}
+\begin{frame}
+	\centering{{\textcolor{blue!80}{\huge{\textbf{Le bande radio}}}}}\\
+\end{frame}
+
+\begin{frame}{Introduzione}
+	Nelle telecomunicazione con il termine \textbf{banda radio} (o \textbf{spettro radio}) si indica la sezione dello spettro elettromagnetico utilizzata per la radio-trasmissione di dati e informazioni.\\
+	Il termine banda radio identifica la suddivisione spettrale del mezzo trasmissivo, ripartita in modo che più utenti e operatori possano utilizzare il mezzo trasmissivo evitando interferenze oppure conflitti di utilizzazione.\\
+	\medskip
+	%Le bande sono soggette ad un piano di \emph{attribuzione} delle frequenze in base alla destinazione di un servizio di radiocomunicazione, con successiva \emph{assegnazione} ad un operatore oppure una \emph{allocazione} geografica su un territorio.\\
+	L'obbiettivo è quello di ottimizzare l'uso dello spettro radio evitando le interferenze tra i servizi, Per questo motivo l'assegnazione delle frequenze avviene tipicamente attraverso tecniche di tipo "\textbf{Frequency Division Multiplexing}" (FDM).\\
+	Questo tipo di assegnazione implica tipicamente la presenza di adeguate bande di guardia la le varia bande attribuite/assegnate/allocate, appunto per evitare la reciproca interferenza.
+\end{frame}
+
+\begin{frame}{Frequency Division Multiplexing}
+	\framesubtitle{Definizione}
+	In telecomunicazioni la \textbf{Multiplazione a Divisione di Frequenza}, conosciuta anche come \textbf{FDM} (acronimo inglese di \textbf{Frequency Division Multiplexing}) è una tecnica di condivisione di un canale di trasmissione secondo la quale l'intero canale disponibile viene diviso in \textbf{sottocanali}, ognuno costituito da una \textbf{sottobanda} di frequenze e separato da un altro grazie ad un piccolo intervallo di guardia. I diversi sottocanali sono quindi assegnati a diverse sorgenti trasmissive e a diversi utenti, i quali dunque possono così comunicare contemporaneamente sullo stesso canale senza incorrere nella mutua interferenza. \\
+	\smallskip
+	Questa tecnica può essere utilizzata solo nel caso di trasmissione di segnali analogici, per tanto è soggetta ai problemi di distorsione e rumore di fondo.\\
+	\end{frame}
+
+\begin{frame}{Frequency Division Multiplexing}
+	\framesubtitle{Esempio}
+	La figura seguente mostra un esempio di FDM in cui tre segnali S1, S2, S3 con banda limitata fra 0 e 4 kHz vengono trasmessi su un unico canale. Ad ogni segnale viene assegnata una porzione di banda di 4 kHz dell'intero canale, per mezzo di una traslazione in frequenza della banda del segnale stesso. In ricezione quindi i diversi segnali vengono estratti dal canale e separati.\\
+	\smallskip
+	\centering
+		\includegraphics[width=0.6\textwidth]{Imgs/FDM}
+	\end{frame}
+
+\begin{frame}{Attribuzione generale delle frequenze}
+	\resizebox{\textwidth}{!}{
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{Denominazione ITU}&\textbf{Banda}  &\textbf{Frequenze}  &\textbf{Lunghezza d'onda}  &\textbf{Utilizzo più comune}  \\
+		\hline
+		Extremely Low Frequency& \textbf{ELF} & 3 - 30 Hz & 100 000 - 10 000 km & Radioastronomia - Telerilevamento - satelliti meteo  \\
+		\hline
+		Super Low Frequency& \textbf{SLF} & 30 - 300 Hz & 10 000 - 1000 km  & Comunicazioni subacquee - analisi elettromagnetiche e geofisiche \\
+		\hline
+		Ultra Low Frequency & \textbf{ULF} & 300 - 3000 Hz & 1000 - 100 km & Comunicazioni subacquee - analisi elettromagnetiche e geofisiche \\
+		\hline
+		Very Low Frequency& \textbf{VLF} & 3 - 30 kHz & 100 - 10 km & Comunicazioni subacquee - analisi elettromagnetiche e geofisiche \\
+		\hline
+		Low Frequency& \textbf{LF} & 30 - 300 kHz & 10 - 1 km & Radiofari aeronautici - navigazione marittima - informazioni e sistemi meteorologi\\
+		\hline
+		Medium Frequency& \textbf{MF} & 300 - 3000 kHz & 1000 - 100 m  & Broadcast\\
+		\hline
+		High Frequency& \textbf{HF} &3 - 30 MHz  & 100 - 10 m   & Radiodiffuzione a lunga distanza - radioamatori\\
+		\hline
+		Very High Frequency& \textbf{VHF} & 30 - 300 MHz & 10 - 1 m  & Aviazione generale - unità navali - forze di polizie - canali televisivi\\
+		\hline
+		Ultra High Frequency& \textbf{UHF} & 300 - 3000 MHz & 100 - 10 cm  & Canali televisivi - telefonia cellulare, reti wireless - aeronautiche militari\\
+		\hline
+		Super High Frequency& \textbf{SHF} & 3 - 30 GHz & 10 - 1 cm  & WLAN - ponti radio terrestri - comunicazioni satellitari - Radar\\
+		\hline
+		Extremely High Frequency & \textbf{EHF} & 30 - 300 GHz & 10 - 1 mm  & Trasmissioni satellitari militari - radioamatori\\
+		\hline
+	\end{tabular}
+	}
+	\end{frame}
+
+\section{La radio e l'impianto ricetrasmittente}
+\begin{frame}
+	\centering{{\textcolor{blue!80}{\huge{\textbf{La radio e l'impianto ricetrasmittente}}}}}\\
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Introduzione}
+	Tutti i sistemi di \textbf{trasmissione radiofonici} sono sempre costituiti da un \textbf{trasmettitore} che termina con \textbf{un'antenna} che irradia le \textbf{onde elettromagnetiche}, e da un \textbf{ricevitore}, che \textbf{capta} il segnale attraverso \textbf{un'altra antenna.}\\
+	\smallskip
+	\centering
+		\includegraphics[width=0.8\textwidth]{Imgs/Radio}
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Antenna}
+	La lunghezza di un'antenna è un parametro legato alla frequenza del segnale in uso, ciò significa che la \textbf{lunghezza dell'antenna determina quali frequenze essa può ricevere e trasmettere} nella maniera migliore e senza danneggiare il trasmettitore.\\
+	\smallskip
+	Generalmente la lunghezza di un'antenna può essere due o quattro volte inferiore alla lunghezza d'onda del segnale. Nel primo caso si dice che l'antenna è \textbf{mezz'onda}, nel secondo caso, che l'antenna è un \textbf{quarto d'onda}. Più la lunghezza dell'antenna si avvicina alla lunghezza d'onda, più l'antenna risulta efficiente e la portata migliorata.
+	\begin{figure}
+		\begin{columns}
+			\hfill
+			\column{.1\linewidth}
+			\animategraphics[loop,width=2.5\textwidth]{10}{GifImage/Antenna/Antenna-}{0}{7}
+			\column{.3\linewidth}
+			%\caption{{\textcolor{gray!80}{[Immagine animata]}}}
+			\qquad \tiny{\textcolor{gray!80}{[Immagine animata]}}
+		\end{columns}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Sistemi di propagazione delle onde elettromagnetiche}
+	Le onde elettromagnetiche, una volta irradiate \textbf{dall'antenna trasmittente}, possono raggiungere \textbf{l'antenna ricevente} in quatto modi diversi:\\
+	 \medskip
+	 \begin{itemize}
+	 	\item Onda terrestre o onda di superficie.
+	 	\item Onda spaziale diretta.
+	 	\item Onda spaziale riflessa dalla ionosfera.
+	 	\item Onda spaziale riflessa dai satelliti.
+	 \end{itemize}
+ \medskip
+ \centering
+ \includegraphics[width=0.35\textwidth]{Imgs/Propagazione}
+	\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Onda terrestre o onda di superficie}
+	L'onda terrestre si ha quando le antenne {\vet Tx} e {\vet Rx} si trovano vicino al suolo, ad altezza relativamente piccola nei confronti della lunghezza d'onda della frequenza emittente ed entrambe le antenne sono polarizzate verticalmente.\\
+	Questo tipo di onde si propaga rasente al suolo, seguendo al curvatura delle superficie terrestre.\\
+	Il percorso che le onde possono compiere è essenzialmente limitato dall'assorbimanto di energia esercitato dal suolo, il quale in parte assorbe e riflette le onde che si propagano su di esso.\\
+	L'attenuazione subita dalle onde è tanto maggiore quanto più è elevata la frequenza de segnale, pertanto, l'onda terrestre viene impiegata per la radiodiffusione ad onde lunghe e medie.\\	
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+		\framesubtitle{Onda spaziale diretta}
+		L'onda spaziale diretta si ha quando le antenne {\vet Tx} e {\vet Rx} si trovano ad una altezza superiore rispetto alla lunghezza d'onda del segnale trasmesso.\\
+		L'altezza sarà tale che le antenne si potranno considerare a \emph{"distanza ottica"}.\\
+		Le onde dirette vengono solitamente impiegate per frequenze superiori si 30 MHz (detta \emph{Frequenza Critica}), cioè con lunghezza d'onda inferiore a dieci metri, quindi nelle trasmissioni televisive e radio FM.\\
+		\medskip
+		\centering
+		 \includegraphics[width=0.5\textwidth]{Imgs/OndaDiretta}
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Frequenza critica}
+	La frequenza critica è la massima frequenza per la quale la ionosfera è in grado di riflettere la radiazione elettromagnetica per incidenza verticale.\\
+	\smallskip
+	La \textbf{ionosfera} è una porzione dell'atmosfera dove la pressione dell'aria è così bassa che \textbf{elettroni} (di carica negativa) e \textbf{ioni} (di carica positiva) sono liberi di muoversi per un certo periodo senza cadere in prossimità di altre particelle ricombinandosi in atomi neutri.\\
+	La causa primaria della \textbf{ionizzazione} di una porzione esterna dell'atmosfera è la \textbf{radiazione ultravioletta} generata dal sole.\\
+	\smallskip
+	Il livello di ionizzazione prodotta non varia uniformemente con la distanza della superficie terrestre, ma presenta un andamento regolare (ma non costante) all'interno di strati di differente spessore, all'incirca paralleli alla superficie terrestre, inoltre è caratterizzato da sensibili differenze tra uno strato e l'altro.\\ 
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Dimostrazione fisica della frequenza critica parte 1}
+	Relazioni utili per l'analisi:\\
+	\begin{itemize}
+		\item Densità $ N $ degli elettroni per la ionosfera: $N = 1.24 \cdot 10^{4} \cdot f_{c(MHz)} cm^{-3}$
+		\item $f = \sqrt{\frac{80.8 \cdot N \cdot (1+2\cdot\frac{h}{R})}{\sin^{2} \beta + 2\cdot\frac{h}{R}}}Hz$ 
+		\item $MUF = f_{max}$
+		\item $OTF = 0.85 \cdot MUF$
+	\end{itemize}
+\smallskip
+Dove:\\
+\begin{itemize}
+	\item[] $N$ = Densità degli elettroni liberi.
+	\item[] $f_c$ = Frequenza critica, ovvero la massima frequenza che viene riflessa per incidenza verticale dalla ionosfera.
+	\item[] $f$ = Massima frequenza che viene riflessa da uno strato ionosferico di altezza $h$ e \\densità elettronica $N$, per un angolo di elevazione $\beta$.
+	\item[] $R$ = Raggio terrestre = 6370 Km
+	\item[] $h$ = Altezza dello strato ionico riflettente.
+	\item[] $MUF$ = Maximum Usable Frequency.
+	\item[] $OTF$ = Optimum Trafic Frequency. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Dimostrazione fisica della frequenza critica parte 2}
+	La formula che fornisce la massima frequenza $f$ riflessa dalla ionosfera mostra che:\\
+	\smallskip
+	\begin{enumerate}
+		\item A parità di angolo $\beta$ di elevazione e di altezza $h$ dello strato ionosferico, maggiore è la densità degli elettroni liberi (ovvero il grado di ionizzazione) e maggiore sarà la massima frequenza riflessa.
+		\item A parità di condizioni ionosferiche (altezza $h$ e densità $N$), la massima frequenza utilizzabile è ottenuta quando l'angolo di elevazione $\beta$ è prossimo allo zero, ovvero quando si trasmette verso l'orrizzonte.
+		\item Per angolo di elevazione $\beta$ uguali a novanta gradi, la massima frequenza diventa uguale alla frequenza critica $f_{c}$.
+		\item la massima frequenza $f$ per angoli $\beta$ minori di novanta gradi è maggiore di $f_{c}$, ed \\aumenta fino al valore massimo per angolo $\beta$ uguale a zero gradi.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Conclusione della dimostrazione fisica della frequenza critica }
+	In conclusione:\\
+	\smallskip
+	Per un dato strato ionosferico, per stabilire un collegamento fra due punti, non è sufficiente che la frequenza scelta sia inferiore alla $MUF$, ma è anche necessario che essa sia pure maggiore della $LUF$ (Least Usable Frequency), nel senso che la frequenza deve essere "sufficientemente" alta da non subire un'attenuazione eccessiva da parte degli strati bassi.\\
+	Pertanto la frequenza ideale di trasmissione, spesso coincidente con la $OTF$, deve soddisfare la relazione:\\
+	\smallskip
+	$LUF \leq f \leq MUF$
+	\smallskip
+	Infine, per date condizioni ionosferiche (densità $N$ ed altezza $h$), e per una data frequenza maggiore della frequenza critica $f_{c}$, l'angolo di radiazione (o elevazione) $\beta$ non deve superare un valore limite, detto angolo critico. In tal caso, la ionosfera non\\ produce riflessione ed il segnale va perso nell'atmosfera.
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Relazione tra la massima frequenza riflessa e l'angolo $\beta$}
+	\centering
+	 \includegraphics[width=0.7\textwidth]{Imgs/Beta}
+\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Onda spaziale riflessa dalla ionosfera}
+	Le onde ionosferiche non raggiungono direttamente l'antenna {\vet Rx}, ma provengono "dall'alto" dopo essere state riflesse dalla ionosfera.\\
+	La riflessione avviene perché queste onde hanno frequenza inferiore alla \emph{Frequenza Critica} di 30MHz.\\
+	\medskip
+	\centering
+	 \includegraphics[width=0.45\textwidth]{Imgs/Ionosfera}
+	\end{frame}
+
+\begin{frame}{Propagazione delle onde elettromagnetiche}
+	\framesubtitle{Onda spaziale riflessa dai satelliti}
+	L'onda spaziale riflessa dai satelliti si ha quando un segnale viene inviato nello spazio con un angolo incidente molto piccolo ed indirizzato in un punto molto preciso dello spazio in cui è allocato un \emph{satellite geostazionario}.\\
+	Il satellite, mantenendo rigorosamente costante la posizione nei confronti della Terra, si comporta come se fosse un'antenna di enorme altezza, capace di "riflettere" il segnale.\\
+	Il satellite si comporta in effetti come antenne ricevente {\vet Rx} per i segnali che giungono da Terra e da antenna trasmittente {\vet Tx} per i segnali che da essa vengono poi irradiati verso Terra.\\
+	\medskip
+	\centering
+	\includegraphics[width=0.35\textwidth]{Imgs/OndaSatellitare}
+\end{frame}
+
+\section{La banda nautica}
+\begin{frame}
+	\centering{{\textcolor{blue!80}{\huge{\textbf{La banda nautica}}}}}\\
+\end{frame}
+
+\begin{frame}{Frequenze nautiche}
+	Le frequenze che rivestono maggiore importanza ed interesse per chi svolge operazioni in mare sono le frequenze in banda \textbf{VHF}.\\
+	\smallskip
+	Il range delle frequenze in base ad una spaziatura di 25 KHz è:\\
+	\begin{itemize}
+		\item Da 156.51 MHz (corrispondente al canale 1)
+		\item A 162.025 MHz (corrispondente al canale 88)
+	\end{itemize}
+\smallskip
+Si tratta di onde che si propagano a \textbf{distanza ottica}, ciò significa che la presenza di \textbf{ostacoli} o la \textbf{curvatura terrestre} ne impediscono la \textbf{diffusione}, se non tramite dispositivi di ripetizione del segnale.\\
+\end{frame}
+
+\section{I canali VHF}
+\begin{frame}
+	\centering{{\textcolor{blue!80}{\huge{\textbf{I canali VHF}}}}}\\
+\end{frame}
+
+\begin{frame}{I canali VHF marini}
+	\framesubtitle{Introduzione}
+	Il \textbf{Piano Nazionale per la Ripartizione delle Frequenze} (PNRF) costituisce un vero e proprio \emph{piano regolatore dell'utilizzo dello spettro radioelettrico} in Italia.\\
+	\smallskip
+	Lo scopo del piano è quello di stabilire, in ambito nazionale e per il tempo di pace:
+	\begin{itemize}
+		\item \textbf{L'attribuzione} ai diversi servizi delle bande di frequenza.
+		\item Indicare per ciascun servizio, nell'ambito delle singole bande, \textbf{l'autorità governativa preposta} alla gestione delle frequenze.
+		\item Indicare le principali \textbf{utilizzazioni} civili e verificare l'efficiente utilizzo dello spettro, al fine di \textbf{liberare risorse}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{I canali VHF marini}
+	\framesubtitle{Tipologia dei canali VHF marini}
+	Molti dei canali VHF sono detti \textbf{duplex} e sono quelli che hanno una frequenza di trasmissione {\vet Tx} diversa da quella ricezione {\vet Rx}.\\
+	Quelli che invece usano la stessa frequenza per trasmettere e ricevere sono detti \textbf{simplex}.\\
+	\smallskip
+	I canali \textbf{duplex} danno la possibilità a chi è dotato di un apparato VHF professionale con questa funzionalità, di poter trasmettere e ricevere simultaneamente.\\
+	\medskip
+	\centering
+	\includegraphics[width=0.5\textwidth]{Imgs/Duplex}
+\end{frame}
+
+\begin{frame}{Tabella Canali VHF marini}
+	\begin{columns}
+		\column{.45\linewidth}
+		\resizebox{1\textwidth}{!}{
+			\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			N.Canale & Freq. Tx & Freq. Rx & Uso & Simplex \\ \hline
+			1 & 156.050 & 160.650 & Corrispondenza pubblica e operazioni portuali &\\ \hline
+			2 & 156.100 & 160.700 & Corrispondenza pubblica e operazioni portuali &\\ \hline
+			3 & 156.150 & 160.750 & Corrispondenza pubblica e operazioni portuali &\\ \hline
+			4 & 156.200 & 160.800 & Corrispondenza pubblica e operazioni portuali &\\ \hline
+			5 & 156.250 & 160.850 & Corrispondenza pubblica e operazioni portuali &\\ \hline
+			6 & 156.300 & 156.300 & Sicurezza nave-nave & X \\ \hline
+			7 & 156.350 & 160.950 & Corrispondenza pubblica e operazioni portuali &\\ \hline
+			8 & 156.400 & 156.400 & Commerciale nave - nave & X \\ \hline
+			9 & 156.450 & 156.450 & Commerciale & X \\ \hline
+			10 & 156.500 & 156.500 & Commerciale & X \\ \hline
+			11 & 156.550 & 156.550 & Commerciale & X \\ \hline
+			12 & 156.600 & 156.600 & Operazioni portuali & X \\ \hline
+			13 & 156.650 & 156.650 & Sicurezza nave-nave in navigazione & X \\ \hline
+			14 & 156.700 & 156.700 & Operazioni portuali & X \\ \hline
+			15 & 156.750 & 156.750 & Operazioni portuali - Solo Bassa Potenza & X \\ \hline
+			16 & 156.800 & 156.800 & Chiamata e soccorso internazionale & X \\ \hline
+			17 & 156.850 & 156.850 & Operazioni portuali - Solo Bassa Potenza & X \\ \hline
+			18 & 156.900 & 161.500 & Operazioni portuali &\\ \hline
+			19 & 156.950 & 161.550 & Operazioni portuali &\\ \hline
+			20 & 157.000 & 161.600 & Operazioni portuali &\\ \hline
+			21 & 157.050 & 161.650 & Operazioni portuali &\\ \hline
+			22 & 157.100 & 161.700 & Operazioni portuali &\\ \hline
+			23 & 157.150 & 161.750 & Corrispondenza pubblica &\\ \hline
+			24 & 157.200 & 161.800 & Corrispondenza pubblica &\\ \hline
+			25 & 157.250 & 161.850 & Corrispondenza pubblica &\\ \hline
+			26 & 157.300 & 161.900 & Corrispondenza pubblica &\\ \hline
+			27 & 157.350 & 161.950 & Corrispondenza pubblica &\\ \hline
+			28 & 157.400 & 162.000 & Corrispondenza pubblica &\\ \hline
+			60 & 156.025 & 160.625 & Corrispondenza pubblica &\\ \hline
+		\end{tabular}}
+		\column{.45\linewidth}
+		\resizebox{1\textwidth}{!}{
+			\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			N.Canale & Freq. Tx & Freq. Rx & Uso & Simplex \\ \hline
+		61 & 156.075 & 160.675 & Corrispondenza pubblica &\\ \hline
+		62 & 156.125 & 160.725 & Corrispondenza pubblica &\\ \hline
+		63 & 156.175 & 160.775 & Corrispondenza pubblica &\\ \hline
+		64 & 156.225 & 160.825 & Corrispondenza pubblica &\\ \hline
+		65 & 156.275 & 160.875 & Corrispondenza pubblica &\\ \hline
+		66 & 156.325 & 160.925 & Corrispondenza pubblica &\\ \hline
+		67 & 156.375 & 156.375 & Nave - nave + Operazioni Portuali & X \\ \hline
+		68 & 156.425 & 156.425 & Bollettino Nautico - Operazioni Portuali  & X \\ \hline
+		69 & 156.475 & 156.475 & Nave - Nave in Operazioni portuali & X \\ \hline
+		70 & 156.525 & 156.525 & Riservato al DSC & X \\ \hline
+		71 & 156.575 & 156.575 & Nave - nave + Operazioni Portuali & X \\ \hline
+		72 & 156.625 & 156.625 & Nave - nave + Nave - Velivolo & X \\ \hline
+		73 & 156.675 & 156.675 & Nave - nave + Nave - Velivolo & X \\ \hline
+		74 & 156.725 & 156.725 & Operazioni portuali & X \\ \hline
+		75 & 156.775 & 156.775 & Nave - Nave in porto - Solo Bassa Potenza & X \\ \hline
+		76 & 156.825 & 156.825 & Nave - Nave in porto - Solo Bassa Potenza & X \\ \hline
+		77 & 156.875 & 156.875 & nave - nave & X \\ \hline
+		78 & 156.925 & 161.525 & Corrispondenza pubblica + Operazioni Portuali &\\ \hline
+		79 & 156.975 & 161.575 & Operazioni portuali &\\ \hline
+		80 & 157.025 & 161.625 & Operazioni portuali &\\ \hline
+		81 & 157.075 & 161.675 & Corrispondenza pubblica + Operazioni Portuali &\\ \hline
+		82 & 157.125 & 161.725 & Corrispondenza pubblica + Operazioni Portuali &\\ \hline
+		83 & 157.175 & 161.775 & Corrispondenza pubblica &\\ \hline
+		84 & 157.225 & 161.825 & Corrispondenza pubblica &\\ \hline
+		85 & 157.275 & 161.875 & Corrispondenza pubblica &\\ \hline
+		86 & 157.325 & 161.925 & Corrispondenza pubblica &\\ \hline
+		87 & 157.375 & 157.375 & Corrispondenza pubblica & X \\ \hline
+		88 & 157.425 & 157.425 & Corrispondenza pubblica & X \\ \hline
+	\end{tabular}}
+	\end{columns}
+\end{frame}
+
+\section{L'alfabeto internazionale}
+\begin{frame}
+	\centering{{\textcolor{blue!80}{\huge{\textbf{L'alfabeto internazionale}}}}}\\
+\end{frame}
+
+\begin{frame}{Alfabeto fonetico ICAO}
+	\framesubtitle{Introduzione}
+	\textbf{L'alfabeto fonetico telegrafico}, chiamato spesso anche \textbf{alfabeto fonetico NATO}, venne sviluppato negli anni cinquanta dall'Organizzazione Internazionale dell'Aviazione Civile (\textbf{ICAO}) per essere comprensibile (e pronunciabile) per tutti i piloti e gli operatori dell'aviazione civile.\\
+	Il suo utilizzo è prescritto dagli standard fraseologici aeronautici internazionali.\\
+	Questo codice è oggi utilizzato anche nelle \textbf{trasmissioni Terra-Bordo-Terra} in ambito navale allo scopo di evitare fraintendimenti tra chi trasmette e chi riceve.\\
+\end{frame}
+
+\begin{frame}{Alfabeto fonetico ICAO}
+	\framesubtitle{Tabella alfabeto fonetico}
+	
+	\begin{table}[!ht]
+		\centering
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{A} - Alpha & \textbf{N} - November \\ \hline
+			\textbf{B} - Bravo & \textbf{O} - Oscar \\ \hline
+			\textbf{C} - Charlie & \textbf{P} - Papa \\ \hline
+			\textbf{D} - Delta & \textbf{Q} - Quebec \\ \hline
+			\textbf{E} - Echo & \textbf{R} - Romeo \\ \hline
+			\textbf{F} - Foxtrot & \textbf{S} - Sierra \\ \hline
+			\textbf{G} - Golf & \textbf{T} - Tango \\ \hline
+			\textbf{H} - Hotel & \textbf{U} - Uniform \\ \hline
+			\textbf{I} - India & \textbf{V} - Victor \\ \hline
+			\textbf{J} - Juliet & \textbf{W} - Whiskey \\ \hline
+			\textbf{K} - Kilo & \textbf{X} - Xray \\ \hline
+			\textbf{L} - Lima & \textbf{Y} - Yankee \\ \hline
+			\textbf{M} - Mike & \textbf{Z} - Zulu \\ \hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\section{La classificazione dei messaggi}
+\begin{frame}
+	\centering{{\textcolor{blue!80}{\huge{\textbf{La classificazione dei messaggi}}}}}\\
+\end{frame}
+
+\begin{frame}{Ordine di priorità dei messaggi}
+	I messaggi radiotelegrafici hanno una scala di priorità ovvero un diritto di precedenza ben definito:\\
+	\medskip
+	\begin{enumerate}
+		\item \textbf{Soccorso} - Lanciato da chiunque si trovi in stato di pericolo o voglia prestare soccorso.
+		\item \textbf{Urgenza} - Concerne la sicurezza di chiunque si trovi in seria difficoltà ma non corra un pericolo immediato.
+		\item \textbf{Sicurezza} - Lanciato da chiunque voglia segnalare un pericolo per la navigazione
+	\end{enumerate}
+\medskip
+Il \textbf{canale 16} (156.8 MHz) è il canale preposto per il lanciare questo tipo di messaggi, il quale, \textbf{non deve essere utilizzato nei primi tre minuti di ogni mezz'ora}, in modo da lasciare il canale libero per l'ascolto di eventuali chiamate di soccorso. Nel tempo rimanente, deve \\essere utilizzato solo per motivi tecnici.
+\end{frame}
+
+\begin{frame}{Messaggio di soccorso}
+	\framesubtitle{Stato di pericolo}
+	
+	Nello\textbf{stato di pericolo} il messaggio sarà preceduto tre volte dalla parola \textbf{MAYDAY} pronunciato alla francese \emph{“medé”}, seguito tre volte dal nominativo dell'unità che richiede immediata assistenza.\\
+	Il testo del messaggio deve contenere indicazioni non ambigue affinché risulti agevole, a chi lo riceve, localizzare l'unità in pericolo attraverso la dichiarazione della posizione, dell'ora, della velocità e della rotta.\\
+	Il Comandante dell'unità che richiede immediata assistenza è bene che dichiari inoltre la natura del pericolo e le proprie intenzioni.\\
+	\medskip
+	{\textcolor{red!80}{Le Unità non coinvolte nelle operazioni di soccorso dovranno mantenere il più assoluto\\ \textbf{silenzio radio}.}}
+\end{frame}
+
+
+\begin{frame}{Messaggio di soccorso}
+	\framesubtitle{Prestare soccorso}
+	Nel caso che si voglia \textbf{prestare soccorso}, rilanciando il messaggio di una imbarcazione in \textbf{stato di pericolo} al quale non è stata percepita una risposta, il Comandante che riceve la richiesta, dopo aver dato il \emph{"ricevuto"} alla nave in stato di pericolo, rilancerà il messaggio a una stazione a terra (che possa assicurare assistenza)  facendo precedere la comunicazione dalle parole \textbf{MAYDAY RELÈ}, (pronunciate alla francese \emph{“medé relé”}), ripetuta tre volte.\\
+	\medskip
+	{\textcolor{red!80}{Le Unità non coinvolte nelle operazioni di soccorso dovranno mantenere il più assoluto \textbf{silenzio radio}.}}
+\end{frame}
+
+\begin{frame}{Messaggi di urgenza}
+	I messaggi di \textbf{urgenza} si riferiscono alla \textbf{sicurezza} di chiunque si trovi in seria difficoltà ma non corra un pericolo immediato.\\
+	\smallskip
+	Nello stato di \textbf{urgenza} il messaggio sarà preceduto tre volte dalla parola \textbf{PAN} ripetuta tre volte e seguita tre volte dal nominativo dell'Unità che fa la richiesta.\\
+	\medskip
+	I messaggi di urgenza si usano ad esempio per comunicare che: un passeggero imbarcato che sta male, un guasto al motore, una perdita di combustibile... etc.
+\end{frame}
+
+\begin{frame}{Messaggi inerenti alla sicurezza}
+Un messaggio \textbf{inerente alla sicurezza} identifica un \textbf{pericolo per la navigazione}. La parola per effettuare una chiamata di \textbf{sicurezza} è \textbf{SECURITÉ}.\\
+\smallskip
+Anche in questo caso il messaggio inerente alla sicurezza sarà preceduto dalla parola \textbf{SECURITÉ} ripetuta tre volte, seguita dal messaggio di Sicurezza per la Navigazione ed eventualmente dalla posizione del pericolo.
+\end{frame}
+
+\section{Trasmissione e ricezione}
+\begin{frame}
+	\centering{{\textcolor{blue!80}{\huge{\textbf{Trasmissione e ricezione}}}}}\\
+\end{frame}
+
+\begin{frame}{Buone pratiche per l'uso del VHF di bordo}
+	Delle buone pratiche da seguire per il corretto utilizzo del VHF di bordo sono:\\
+	\begin{itemize}
+		\item Regolare opportunamente le impostazioni ed i volumi della radio in modo che i messaggi vengano compresi con chiarezza.
+		\item Prima di trasmettere un messaggio, bisogna aver ben chiaro in mente cosa si vuole comunicare,\textbf{evitando di trasmettere continue correzioni o ripetizioni}.
+		\item Per quanto possibile, i messaggi devono essere \textbf{brevi e concisi}.
+		\item Rendersi conto del \textbf{“contesto-radio”} in cui ci si trova ascoltando anche i messaggi altrui per evitare di interromperli, tenendo presente che la normale procedura di comunicazione prevede una richiesta ed un risposta.
+		\item Si devono \textbf{evitare in modo assoluto considerazioni e chiacchiere personali}.
+		\item {\textcolor{red!80}{Essendo il canale uno spazio pubblico, la professionalità dell'operatore è sotto gli \\occhi di tutti!}}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Operatività sul canale 16}
+	Il canale 16 dei VHF marini viene utilizzato per effettuare una segnalazione di soccorso o di emergenza e non deve essere utilizzato per qualsiasi altro tipo di comunicazione.
+\end{frame}
 
 \end{document}
