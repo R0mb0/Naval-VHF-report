@@ -11,7 +11,7 @@ This work is licensed under a
 
 Urbino`s University - Applied computer science - Computer Networks
 
-# Computer Networks Relation
+# Computer Networks Report
 
-The goal of this relation is explain the functioning of naval vhf, paying attention abought the frequencys, the communication & naval procedures and how to use it during the navigation.
+The goal of this report is explain the functioning of naval vhf, paying attention abought the frequencys, the communication & naval procedures and how to use it during the navigation.
 
