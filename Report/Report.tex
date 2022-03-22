@@ -15,9 +15,9 @@
 
 %change the font localy
 \newcommand*{\vet}{\fontfamily{qzc}\selectfont}
-
 % in way to comment a block
 \long\def\/*#1*/{}
+
 
 %==========================Set the foot line========================================================
 \makeatletter
@@ -45,7 +45,7 @@
 	
 	% this is a new field with an external link
 	\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{LinkToIndex}%
-		\usebeamerfont{author in head/foot}\hyperlink{index}{indice}\hspace*{2ex}
+		\usebeamerfont{author in head/foot}\hyperlink{index}{Indice}\hspace*{2ex}
 	\end{beamercolorbox}%
 
 %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
@@ -85,12 +85,6 @@ Alias Rombo}
 		\maketitle 		
 	\end{frame}
 	
-	% Index Page
-	\begin{frame}[label = index]
-		%\index{generate}
-		\tableofcontents
-	\end{frame}
-
 	\section{Premessa}
 	\begin{frame}
 		\centering{{\textcolor{blue!80}{\huge{\textbf{Premessa}}}}}\\
@@ -927,19 +921,20 @@ Si tratta di onde che si propagano a \textbf{distanza ottica}, ciò significa ch
 	\centering{{\textcolor{blue!80}{\huge{\textbf{L'alfabeto internazionale}}}}}\\
 \end{frame}
 
-\begin{frame}{Alfabeto fonetico ICAO}
+\begin{frame}{Alfabeto fonetico NATO}
 	\framesubtitle{Introduzione}
 	\textbf{L'alfabeto fonetico telegrafico}, chiamato spesso anche \textbf{alfabeto fonetico NATO}, venne sviluppato negli anni cinquanta dall'Organizzazione Internazionale dell'Aviazione Civile (\textbf{ICAO}) per essere comprensibile (e pronunciabile) per tutti i piloti e gli operatori dell'aviazione civile.\\
 	Il suo utilizzo è prescritto dagli standard fraseologici aeronautici internazionali.\\
 	Questo codice è oggi utilizzato anche nelle \textbf{trasmissioni Terra-Bordo-Terra} in ambito navale allo scopo di evitare fraintendimenti tra chi trasmette e chi riceve.\\
 \end{frame}
 
-\begin{frame}{Alfabeto fonetico ICAO}
-	\framesubtitle{Tabella alfabeto fonetico}
+\begin{frame}{Alfabeto fonetico NATO}
+	\framesubtitle{Tabella lettere dell'alfabeto fonetico NATO}
 	
-	\begin{table}[!ht]
-		\centering
-		\begin{tabular}{|l|l|}
+		\begin{columns}
+			\hfill
+		\column{.3\linewidth}
+			\begin{tabular}{|l|l|}
 			\hline
 			\textbf{A} - Alpha & \textbf{N} - November \\ \hline
 			\textbf{B} - Bravo & \textbf{O} - Oscar \\ \hline
@@ -955,7 +950,31 @@ Si tratta di onde che si propagano a \textbf{distanza ottica}, ciò significa ch
 			\textbf{L} - Lima & \textbf{Y} - Yankee \\ \hline
 			\textbf{M} - Mike & \textbf{Z} - Zulu \\ \hline
 		\end{tabular}
-	\end{table}
+		\column{.5\linewidth}
+		Esempio: volendo fare lo spelling del nominativo dell'imbarcazione “SIBILLA”, si dirà: \emph{“ Sierra, India, Bravo, India, Lima, Lima, Alfa”}.
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Alfabeto fonetico NATO}
+	\framesubtitle{Numeri dell'alfabeto fonetico NATO}
+	I numeri devono essere trasmessi \textbf{Pronunciando le cifre separatemene tranne le migliaia intere}.\\
+	I multipli interi di mille devono essere trasmessi pronunciando ogni cifra delle migliaia seguite dalla parola “Mille”.\\
+	I decimali saranno preceduti dalla parola punto (o decimale).\\
+	\smallskip
+	Chi riceve, potrà richiedere la ripetizione dei numeri in modo tale da poterli convalidare.\\
+\end{frame}
+
+\begin{frame}{Alfabeto fonetico NATO}
+	\framesubtitle{Esempi di pronuncia dei numeri dell'alfabeto fonetico NATO}
+		\begin{itemize}
+		\item 10 \qquad (Uno Zero)
+		\item 97 \qquad (Nove Sette)
+		\item 721 \qquad (Sette Due Uno)
+		\item 100 \qquad (Mille)
+		\item 1300 \qquad (Uno Tre Zero Zero)
+		\item 10000 \qquad (Uno Zero Mille)
+		\item 122.6 \qquad (Uno Due Due punto Sei)
+	\end{itemize}
 \end{frame}
 
 \section{La classificazione dei messaggi}
@@ -1025,7 +1044,124 @@ Anche in questo caso il messaggio inerente alla sicurezza sarà preceduto dalla 
 \end{frame}
 
 \begin{frame}{Operatività sul canale 16}
-	Il canale 16 dei VHF marini viene utilizzato per effettuare una segnalazione di soccorso o di emergenza e non deve essere utilizzato per qualsiasi altro tipo di comunicazione.
+	Il canale 16 dei VHF marini viene utilizzato per effettuare una \textbf{segnalazioni di soccorso, d'emergenza e di sicurezza}, pertanto non deve essere utilizzato per qualsiasi altro tipo di comunicazione.\\
+	\smallskip
+	Prima di \textbf{trasmettere} un messaggio, è necessario assicurarsi che sul canale non ci siano altre comunicazioni d'emergenza attive in attesa di essere trasferite su un altro canale, (spesso suggerito dalla Guardia Costiera).\\
+	\smallskip
+	Nei \textbf{ primi tre minuti di ogni mezz'ora} va mantenuto su questo canale il \textbf{silenzio radio} ed ogni messaggio trasmesso deve essere breve e conciso,  in modo da privilegiare le comunicazioni d'emergenza, tenendo il canale il più libero possibile.
+\end{frame}
+
+\begin{frame}{Utilizzo del VHF}
+	\framesubtitle{Potenza di un apparato VHF}
+	L'intensità del segnale di un apparato VHF dipende dalla potenza di trasmissione e dall'efficenza dell'antenna installata.\\
+	\smallskip
+	In media una \textbf{radio VHF portatile} possiede una portata di \textbf{circa nove miglia}, per una potenza di trasmissione compresa \textbf{tra i tre ed i cinque Watt}.\\
+	Invece una \textbf{radio VHF fissa} possiede una portata di \textbf{circa quattordici miglia}, per una potenza di trasmissione di \textbf{venticinque Watt}.\\
+	\smallskip
+	In entrambi i modelli è possibile scendere di un Watt (con un apposito pulsante) per comunicazioni a corto raggio, in modo da non invadere l'eterere a distanze inutili con la possibilità di creare interferenze ad altre comunicazioni. \\
+	Mentre se si deve trasmettere a lunga distanza si sfrutta la potenza massima.\\
+\end{frame}
+
+\begin{frame}{Utilizzo del VHF}
+	\framesubtitle{Esempio di apparati ricetrasmittenti VHF}
+	\begin{figure}
+		\begin{columns}
+			\column{.3\linewidth}
+			 \includegraphics[width=0.7\textwidth]{Imgs/VHFPort}
+			\column{.35\linewidth}
+			 \includegraphics[width=1\textwidth]{Imgs/VHFFis}
+		\end{columns}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Effettuare una chiamata}
+	Per effettuare una chiamata si \textbf{sintonizza} l'apparato VHF su un canale noto al ricevente della trasmissione, accertandosi che non ci siamo altre comunicazioni in corso sullo stesso canale.\\
+	\smallskip
+	Quindi si procede alla trasmissione chiamando \textbf{per tre volte il nominativo della stazione}, preceduto dalla parola "qui". Normalmente il nominativo della stazione da contattare è il nome dell'unità.\\
+	\medskip
+	\textbf{Per esempio:}\\
+	\emph{Papa Charlie Uno Zero Tre Cinque - Papa Charlie Uno Zero Tre Cinque - Papa Charlie Uno Zero Tre Cinque, qui Papa Charlie Uno Zero Tre Tre}\\
+	\smallskip
+	Se "Papa Charlie Uno Zero Tre Cinque" non dovesse rispondere si attende per due minuti e poi si effettua di nuovo la chiamata.
+\end{frame}
+
+\begin{frame}{Rispondere a una chiamata}
+I canali VHF più usati sono \emph{simplex}, per cui la trasmissione e la ricezione avvengono sulla stessa frequenza, quindi non si può parlare e ascoltare contemporaneamente.
+\smallskip
+Al fine di agevolare le comunicazioni,  il dialogo due operatori deve essere scandito da una serie di parole codificate: si usa \textbf{"passo"} o \textbf{"cambio"} per indicare che si passa dalla fase di trasmissione a quella di ricezione e \textbf{"ricevuto"} per indicare che si è compreso il messaggio.\\
+Per segnalare la fine della trasmissione si usa la frase: \textbf{"passo e chiudo"}.\\
+\smallskip
+È inoltre opportuno segnalare la \textbf{scala di comprensibilità dei messaggi}:\\
+\begin{enumerate}
+	\item Incomprensibile.
+	\item Comprensibile a tratti.
+	\item Comprensibile ma con difficoltà.
+	\item Comprensibile.
+	\item Perfettamente comprensibile.
+\end{enumerate}
+\smallskip
+\emph{Un tempo, essendo la scala scandita in quinti, si diceva "ricevo un quinto"(quindi la \\portante), oggi è preferibile dire: \textbf{"ricevo uno"} oppure \textbf{"ricevo forza uno"}.}
+\end{frame}
+
+\begin{frame}{Il canale 68}
+	Il canale 68 è il canale preposto per la trasmissione del \textbf{Bollettino del Mare} relativo ai bacini del \textbf{Mediterraneo}. La trasmissione è emessa \textbf{24 ore su 24} dall'\textbf{Istituto Idrografico della Marina Militare}.
+	\smallskip
+	La previsione è valida 12 ore e viene rinnovata ogni 6 ore. Il rinnovi vengono effettuati intorno alle ore 00 - 06 - 12 -18.\\
+	\smallskip
+	Il bollettino del mare (anche detto \textbf{Meteomar}) comprende:
+	\begin{itemize}
+		\item Avvisi di burrasche in corso o previste.
+		\item Avvisi di temporali in corso o previsti.
+		\item Analisi della situazione.
+		\item Situazione e tendenza della forza dei mari e dei venti per le ore successive
+		\item Avvisi ai naviganti di primaria importanza.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Norme per l'utilizzo del VHF}
+	Tutte le unità che navigano oltre le \textbf{sei miglia} dalla costa deve essere presente un dispositivo ricetrasmittente VHF (di tipo fisso o portatile), mentre nelle unità di \textbf{lunghezza} superiore a \textbf{24 metri} deve essere installato \textbf{obbligatoriamente} un apparato VHF di tipo \textbf{fisso}.\\
+	Entro le sei miglia dalla costa l'uso del VHF è facoltativo.\\
+	\medskip
+	{\textcolor{red!80}{L'apparato VHF,\textbf{con tale documentazione}, va usato solo ai fini della sicurezza, con esclusione tassativa dell'effettuazione di traffico di corrispondenza pubblica.}}
+\end{frame}
+
+\begin{frame}{Certificato limitato di radiotelefonista}
+	Il certificato limitato di radiotelefonista è una certificazione necessaria per l'utilizzo di apparecchiature ricetrasmittenti VHF a bordo di imbarcazioni o navi; essa è regolata dall'\textbf{art. 165 del Codice di comunicazioni elettroniche}.\\
+	\medskip
+	Questo certificato è disponibile in due tipologie:
+	\begin{enumerate}
+		\item Per impianti con potenza fino a 60 watt su navi di stazza lorda inferiore alle 150 tonnellate (ottenibile senza sostenere esami).
+		\item Per ogni tipo di impianto installato su navi di stazza lorda inferiore a 1600 tonnellate (rilasciato dopo il superamento di un esame).
+	\end{enumerate}
+\smallskip
+Entrambi i certificati vengono emessi dalle sedi regionali del \textbf{Ministero delle \\Comunicazioni}.
+\end{frame}
+
+\begin{frame}{Radio ad uso impresa (Approfondimento)}
+	Per ottenere la licenza per stazioni radio (es. radio taxi, servizi di vigilanza, associazioni per la protezione civile), sia fisse che mobili, bisogna inviare la modulistica indicata dall'\textbf{art. 107 del Decreto legislativo 259/03}, cioè \textbf{allegato 14, allegato 15 e allegato 16} presso:\\
+	\medskip
+	Ministero dello Sviluppo Economico - Comunicazioni\\
+	Direzione Generale per i servizi di comunicazione elettronica e di radiodiffusione – Divisione II\\
+	Viale America, 201 - 00144 Roma\\
+	\medskip
+	L'ufficio competente, dopo avere effettuato \textbf{un'istruttoria tecnica e amministrativa}, comunicherà l'entità del contributo e i dati per effettuare il versamento in questione.
+\end{frame}
+
+\begin{frame}{Sanzioni (Approfondimento)}
+	\begin{itemize}
+		\item Art. 102 Codice delle Comunicazioni Elettroniche (installazione ed esercizio di comunicazione elettronica senza autorizzazione) - sanzione da 300€ a 10000€
+		\item Art. 172 Codice delle Comunicazioni Elettroniche ( fare uso a bordo di unità nautiche di apparecchiature radio nelle bande del servizio mobile marittimo in assenza di autorizzazione) - sanzione da 120€ a 485€
+		\item Art. 1200 Codice della Navigazione (abusivo trasporto o impiego di apparecchi radiotrasmittenti a bordo di unità nautiche) - sanzione da 1032€ a 6197€
+		\item Art. 217 Codice delle comunicazioni Elettroniche (uso indebito del segnale di soccorso) - arresto sino a 6 mesi o ammenda sino a 670€
+		\item Art. 658 Codice Penale (procurato allarme presso l’autorità) - arresto sino a 6 mesi o ammenda da 10€ a 516€
+	\end{itemize}
+\end{frame}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\section{Indice}
+\begin{frame}[label = index]
+	%\index{generate}
+	\tableofcontents
 \end{frame}
 
 \end{document}
