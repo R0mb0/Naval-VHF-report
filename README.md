@@ -13,5 +13,5 @@ Urbino`s University - Applied computer science - Computer Networks
 
 # Computer Networks Report
 
-The goal of this report is explain the functioning of naval vhf, paying attention abought the frequencys, the communication & naval procedures and how to use it during the navigation. 
+The goal of this report is to explain the functioning of naval vhf, paying attention about the frequencies, the communication & naval procedures and how to use it during the navigation. 
 
