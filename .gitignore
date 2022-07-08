@@ -6,6 +6,7 @@
 *.snm
 *.gz
 *.toc
-.DS_Store
+*.DS_Store
+*.xcf
 Relation/Relation.pdf
 Relation/Relation.pdf
