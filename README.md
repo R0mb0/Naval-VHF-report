@@ -6,6 +6,7 @@ The goal of this report is to explain the functioning of naval vhf, paying atten
 
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 [![Compilation_Test](https://github.com/R0mb0/Naval-VHF-report/actions/workflows/Compilation_Test.yml/badge.svg)](https://github.com/R0mb0/Naval-VHF-report/actions/workflows/Compilation_Test.yml)
+[![pages-build-deployment](https://github.com/R0mb0/Naval-VHF-report/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/R0mb0/Naval-VHF-report/actions/workflows/pages/pages-build-deployment)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8c31eddfd7d54b09975c02409015da53)](https://app.codacy.com/gh/R0mb0/Naval-VHF-report/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/R0mb0/Naval-VHF-report)
